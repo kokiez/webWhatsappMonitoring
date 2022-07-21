@@ -184,6 +184,11 @@ while True:
             search.clear()
             search.send_keys(name)
             time.sleep(1)
+            
+            print("Look at whatsapp Screen")
+            print("Is this your contact that you want to monitor?\n If 'YES', press 'Enter key'. \n If 'NO', please press 'CTRL + C'")
+            aa = input("")
+            
             user = browser.find_element(By.CSS_SELECTOR, "span[title='"+nameOfContact+"']")
             time.sleep(3)
             user.click()
